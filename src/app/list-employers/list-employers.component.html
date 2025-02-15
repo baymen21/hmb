@@ -1,0 +1,21 @@
+<h1 align="center">Liste des employers</h1>
+
+<table border="3" align="center" class="table">
+  <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Phone</th>
+  </tr>
+  <tr *ngFor="let emp of employers">
+      <td>{{emp.id}}</td>
+      <td>{{emp.name}}</td>
+      <td>{{emp.username}}</td>
+      <td>{{emp.email}}</td>
+      <td>{{emp.address.suite}}, {{emp.address.suite}}, {{emp.address.zipcode}}, {{emp.address.city}}</td>
+      <td>{{emp.phone}}</td>
+  </tr>
+
+</table>

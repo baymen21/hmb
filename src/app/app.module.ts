@@ -6,19 +6,24 @@ import { AppComponent } from './app.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { UpperCaseFirstLetterPipe } from './pipes/upper-case-first-letter.pipe';
 import { ConcactStringIngenieurPipe } from './piepes/concact-string-ingenieur.pipe';
+import { ListEmployersComponent } from './list-employers/list-employers.component';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { ListPostsComponent } from './list-posts/list-posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListUserComponent,
     UpperCaseFirstLetterPipe,
-    ConcactStringIngenieurPipe
+    ConcactStringIngenieurPipe,
+    ListEmployersComponent,
+    ListPostsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
