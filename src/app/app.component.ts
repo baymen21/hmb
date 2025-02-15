@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  nom:string="Ayman BJAWI"
-formation="Angular & DotNet"
-names:string[]=["ayman", "nesrine", "amine", "lina"]
+
 }

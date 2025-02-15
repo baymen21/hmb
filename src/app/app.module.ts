@@ -9,6 +9,8 @@ import { ConcactStringIngenieurPipe } from './piepes/concact-string-ingenieur.pi
 import { ListEmployersComponent } from './list-employers/list-employers.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { ListPostsComponent } from './list-posts/list-posts.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ListPostsComponent } from './list-posts/list-posts.component';
     UpperCaseFirstLetterPipe,
     ConcactStringIngenieurPipe,
     ListEmployersComponent,
-    ListPostsComponent
+    ListPostsComponent,
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

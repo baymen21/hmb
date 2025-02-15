@@ -1,0 +1,8 @@
+<h3>{{nom}}</h3>
+<h4>Formation en : {{formation}}</h4>
+<ul>
+  <li *ngFor="let name of names">{{name|upperCaseFirstLetter|concactStringIngenieur}}</li>
+</ul>
+
+<hr/>
+<app-list-user></app-list-user>
