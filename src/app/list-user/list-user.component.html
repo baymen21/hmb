@@ -1,0 +1,15 @@
+<p>c'est mon premier composant ListUser</p>
+<h4 align ="center">Event binding</h4>
+<button class="btn btn-success" (click)="display()">Click me</button>
+<table align="center" border="2" class="table">
+    <tr><th>ID</th><th>Nom</th><th>Prenom</th><th>Adresse</th><th>Tel</th></tr>
+        <tr *ngFor="let personne of personnels">
+            <td>{{personne.id}}</td>
+            <td>{{personne.nom}}</td>
+            <td>{{personne.prenom}}</td>
+            <td>{{personne.adresse}}</td>
+            <td>{{personne.tel}}</td>
+        </tr>
+</table>
+
+
