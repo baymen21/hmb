@@ -11,6 +11,7 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 import { ListPostsComponent } from './list-posts/list-posts.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { ListTodoComponent } from './list-todo/list-todo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     ListEmployersComponent,
     ListPostsComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ListTodoComponent
   ],
   imports: [
     BrowserModule,

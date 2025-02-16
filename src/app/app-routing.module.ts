@@ -3,6 +3,7 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ListEmployersComponent } from './list-employers/list-employers.component';
+import { ListTodoComponent } from './list-todo/list-todo.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,11 @@ const routes: Routes = [
   {
     path:"posts",
     component:ListPostsComponent
+  },
+
+  {
+    path:"todos",
+    component:ListTodoComponent
   }
 ];
 

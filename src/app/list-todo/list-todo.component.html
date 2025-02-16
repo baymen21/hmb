@@ -1,0 +1,16 @@
+<h1 align="center">Liste des Todos</h1>
+<table border="3" align="center" class="table">
+  <tr>
+      <th>UserID</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Completed</th>
+  </tr>
+  <tr *ngFor="let todo of todos">
+      <td>{{todo.userId}}</td>
+      <td>{{todo.id}}</td>
+      <td>{{todo.title}}</td>
+      <td>{{todo.completed}}</td>
+  </tr>
+
+</table>
