@@ -34,3 +34,10 @@ export interface Todo {
   title:string,
   completed:string,
 }
+
+export interface Provider {
+  id:number,
+  name:string,
+  address:string,
+  email:string
+}

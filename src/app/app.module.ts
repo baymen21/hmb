@@ -12,6 +12,9 @@ import { ListPostsComponent } from './list-posts/list-posts.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ListTodoComponent } from './list-todo/list-todo.component';
+import { ListProvidersComponent } from './list-providers/list-providers.component';
+import { FormsModule } from '@angular/forms';
+import { AddProviderComponent } from './add-provider/add-provider.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +26,14 @@ import { ListTodoComponent } from './list-todo/list-todo.component';
     ListPostsComponent,
     NavbarComponent,
     HomeComponent,
-    ListTodoComponent
+    ListTodoComponent,
+    ListProvidersComponent,
+    AddProviderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent]

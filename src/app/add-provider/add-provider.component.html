@@ -1,0 +1,38 @@
+<h1 align="center">Ajouter nouveau provider</h1>
+<form #providerForm="ngForm" (ngSubmit)="ajouterProviderBD(providerForm.value)">
+    <div class="mb-3 row">
+        <label for="providerName" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input ngModel type="text" name="name" class="form-control" id="providerName">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="providerEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input ngModel type="text" name="email" class="form-control" id="providerEmail">
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label for="providerAddress" class="col-sm-2 col-form-label">Address</label>
+        <div class="col-sm-10">
+            <input ngModel type="text" name="address" class="form-control" id="providerAddress">
+        </div>
+    </div>
+    <div style="margin-left:80%">
+        <div class="row">
+            <div class="col-sm-4">
+                <input type="submit" class="form-control btn btn-success" value="Ajouter">
+            </div>
+            <div class="col-sm-4">
+                <input type="reset" class="form-control btn btn-warning" value="Clear">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="mb-3 row">
+        <label for="providerDescription" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+            <textarea name="description" class="form-control" id="providerDescription"></textarea>
+        </div>
+    </div> -->
+</form>

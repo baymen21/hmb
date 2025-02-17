@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ListEmployersComponent } from './list-employers/list-employers.component';
 import { ListTodoComponent } from './list-todo/list-todo.component';
+import { ListProvidersComponent } from './list-providers/list-providers.component';
+import { AddProviderComponent } from './add-provider/add-provider.component';
 
 const routes: Routes = [
   {
@@ -24,6 +26,20 @@ const routes: Routes = [
   {
     path:"todos",
     component:ListTodoComponent
+  },
+
+  {
+    path:"providers",
+    component:ListProvidersComponent
+  },
+
+  {
+    path:"addproviders",
+    component:AddProviderComponent
+  },
+
+  {
+    path:'', redirectTo:'/home', pathMatch:'full' //sert à afficher la page Home dès le lancement de l'application
   }
 ];
 
