@@ -44,7 +44,7 @@ export class UpdateProviderComponent implements OnInit{
 
     this.service.updateProvider(provider).subscribe(
       response => {
-        this.router.navigate(['listProviders']);
+        this.router.navigate(['providers']);
       }
     );
   }

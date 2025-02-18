@@ -29,6 +29,11 @@ export class ListProvidersComponent implements OnInit{
   updateProvider(provider:any){
 this.router.navigate((["/updateProvider",provider.id]))
   }
+
+  detailsProvider(provider:any){
+    this.router.navigate((["/detailsProvider",provider.id]))
+      }
+
   loadProvider(){
     this.service.getProviders().subscribe(
       (data) =>

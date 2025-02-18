@@ -16,6 +16,7 @@ import { ListProvidersComponent } from './list-providers/list-providers.componen
 import { FormsModule } from '@angular/forms';
 import { AddProviderComponent } from './add-provider/add-provider.component';
 import { UpdateProviderComponent } from './update-provider/update-provider.component';
+import { DetailsProviderComponent } from './details-provider/details-provider.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UpdateProviderComponent } from './update-provider/update-provider.compo
     ListTodoComponent,
     ListProvidersComponent,
     AddProviderComponent,
-    UpdateProviderComponent
+    UpdateProviderComponent,
+    DetailsProviderComponent
   ],
   imports: [
     BrowserModule,
