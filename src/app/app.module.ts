@@ -15,6 +15,7 @@ import { ListTodoComponent } from './list-todo/list-todo.component';
 import { ListProvidersComponent } from './list-providers/list-providers.component';
 import { FormsModule } from '@angular/forms';
 import { AddProviderComponent } from './add-provider/add-provider.component';
+import { UpdateProviderComponent } from './update-provider/update-provider.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AddProviderComponent } from './add-provider/add-provider.component';
     HomeComponent,
     ListTodoComponent,
     ListProvidersComponent,
-    AddProviderComponent
+    AddProviderComponent,
+    UpdateProviderComponent
   ],
   imports: [
     BrowserModule,

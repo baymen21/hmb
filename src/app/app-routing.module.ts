@@ -6,6 +6,7 @@ import { ListEmployersComponent } from './list-employers/list-employers.componen
 import { ListTodoComponent } from './list-todo/list-todo.component';
 import { ListProvidersComponent } from './list-providers/list-providers.component';
 import { AddProviderComponent } from './add-provider/add-provider.component';
+import { UpdateProviderComponent } from './update-provider/update-provider.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,11 @@ const routes: Routes = [
   {
     path:"addproviders",
     component:AddProviderComponent
+  },
+
+  {
+    path:"updateProvider/:id",
+    component:UpdateProviderComponent
   },
 
   {

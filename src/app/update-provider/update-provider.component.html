@@ -1,0 +1,29 @@
+<h1 align="center">Mise à jour d'un provider</h1>
+
+    <div class="mb-3 row">
+        <label for="providerName" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="name" type="text"  class="form-control" id="providerName">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="providerEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="email" type="text"  class="form-control" id="providerEmail">
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label for="providerAddress" class="col-sm-2 col-form-label">Address</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="address" type="text"  class="form-control" id="providerAddress">
+        </div>
+    </div>
+
+    <div style="margin-left:80%">
+        <div class="row">
+            <div class="col-sm-4">
+                <button class="form-control btn btn-success" (click)="updateProvider()">Mettre à jour</button>
+            </div>
+        </div>
+    </div>
