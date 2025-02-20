@@ -8,6 +8,9 @@ import { ListProvidersComponent } from './list-providers/list-providers.componen
 import { AddProviderComponent } from './add-provider/add-provider.component';
 import { UpdateProviderComponent } from './update-provider/update-provider.component';
 import { DetailsProviderComponent } from './details-provider/details-provider.component';
+import { ListArticlesComponent } from './list-articles/list-articles.component';
+import { AddArticleComponent } from './add-article/add-article.component';
+import { ProviderArticlesComponent } from './provider-articles/provider-articles.component';
 
 const routes: Routes = [
   {
@@ -48,6 +51,21 @@ const routes: Routes = [
   {
     path:"detailsProvider/:id",
     component:DetailsProviderComponent
+  },
+
+  {
+    path:"listArticles",
+    component:ListArticlesComponent
+  },
+
+  {
+    path:"addArticle",
+    component:AddArticleComponent
+  },
+
+  {
+    path: "providerArticles",
+    component: ProviderArticlesComponent
   },
 
   {

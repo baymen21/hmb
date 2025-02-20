@@ -1,0 +1,17 @@
+<h1 align="center">Liste des Articles</h1>
+<table border="3" align="center" class="table">
+  <tr>
+      <th>ID</th>
+      <th>Label</th>
+      <th>Price</th>
+      <th>Picture</th>
+      <th>Provider</th>
+  </tr>
+  <tr *ngFor="let article of article">
+      <td>{{article.id}}</td>
+      <td>{{article.label}}</td>
+      <td>{{article.price}}</td>
+      <td>{{article.picture}}</td>
+      <td>{{article.provider?.name}}</td>
+  </tr>
+</table>

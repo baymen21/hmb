@@ -17,6 +17,10 @@ import { FormsModule } from '@angular/forms';
 import { AddProviderComponent } from './add-provider/add-provider.component';
 import { UpdateProviderComponent } from './update-provider/update-provider.component';
 import { DetailsProviderComponent } from './details-provider/details-provider.component';
+import { ListArticlesComponent } from './list-articles/list-articles.component';
+import { AddArticleComponent } from './add-article/add-article.component';
+import { ProviderArticlesComponent } from './provider-articles/provider-articles.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -32,12 +36,16 @@ import { DetailsProviderComponent } from './details-provider/details-provider.co
     ListProvidersComponent,
     AddProviderComponent,
     UpdateProviderComponent,
-    DetailsProviderComponent
+    DetailsProviderComponent,
+    ListArticlesComponent,
+    AddArticleComponent,ProviderArticlesComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent]

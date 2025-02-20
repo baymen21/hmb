@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Select a Provider</h2>
+  <select class="form-control" [(ngModel)]="selectedProviderId" (change)="onProviderSelected()">
+    <option *ngFor="let provider of providers" [value]="provider.id">{{ provider.name }}</option>
+  </select>
+
+  <div *ngIf="selectedProvider">
+    <h3>Articles for {{ selectedProvider?.name }}</h3>
+    <div *ngIf="articles.length > 0">
+      <ul>
+        <li *ngFor="let article of articles">
+          <h5>{{ article?.label }} - {{ article?.price }}€</h5>
+          <img [src]="article?.picture" alt="{{ article?.label }}" width="100">
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="articles?.length === 0">
+      <p>No articles available for this provider.</p>
+    </div>
+  </div>
+</div>
