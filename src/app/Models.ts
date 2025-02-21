@@ -1,5 +1,5 @@
-export interface User {
-    id:number,
+export interface Usertest {
+    id1?:number,
     nom:string,
     prenom:string,
     tel:string,

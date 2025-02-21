@@ -70,7 +70,15 @@ const routes: Routes = [
 
   {
     path:'', redirectTo:'/home', pathMatch:'full' //sert à afficher la page Home dès le lancement de l'application
+  },
+
+  {
+    path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule)
+  },
+  {
+    path: 'typeUser', loadChildren: () => import('./typeuser/typeuser.module').then(m => m.TypeuserModule)
   }
+
 ];
 
 @NgModule({

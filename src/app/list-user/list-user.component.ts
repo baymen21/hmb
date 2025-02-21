@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { User } from '../Models';
+import { Usertest } from '../Models';
 
 @Component({
   selector: 'app-list-user',
@@ -9,10 +9,10 @@ import { User } from '../Models';
 })
 export class ListUserComponent {
 
-  personnels:User[]=[
-    {"id":1, "nom":"ayman", "prenom":"bjawi", "adresse":"tinja","tel":"29283072"},
-    {"id":1, "nom":"ayman", "prenom":"bjawi", "adresse":"tinja","tel":"29283072"},
-    {"id":1, "nom":"ayman", "prenom":"bjawi", "adresse":"tinja","tel":"29283072"}
+  personnels:Usertest[]=[
+    {"id1":1, "nom":"ayman", "prenom":"bjawi", "adresse":"tinja","tel":"29283072"},
+    {"id1":1, "nom":"ayman", "prenom":"bjawi", "adresse":"tinja","tel":"29283072"},
+    {"id1":1, "nom":"ayman", "prenom":"bjawi", "adresse":"tinja","tel":"29283072"}
   ];
 
   display() {

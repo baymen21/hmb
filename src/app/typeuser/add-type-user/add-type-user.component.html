@@ -1,0 +1,37 @@
+<div class="col-lg-12">
+  <h2 class="text-center">Ajouter type d'utilisateur</h2>
+
+    <form [formGroup]="typeUserForm" (ngSubmit)="onSubmit()">
+      <!-- Libellé en Arabe -->
+      <div class="form-group">
+        <label for="libelleAr">Libellé (Arabe) :</label>
+        <input type="text" id="libelleAr" class="form-control" formControlName="libelleAr">
+        <div *ngIf="typeUserForm.get('libelleAr')?.invalid && typeUserForm.get('libelleAr')?.touched" class="text-danger">
+          <span *ngIf="typeUserForm.get('libelleAr')?.errors?.['required']">Ce champ est obligatoire.</span>
+          <span *ngIf="typeUserForm.get('libelleAr')?.errors?.['minlength']">Minimum : 3 caractères.</span>
+          <span *ngIf="typeUserForm.get('libelleAr')?.errors?.['pattern']">Seuls les caractères arabes et les chiffres sont autorisés.</span>
+        </div>
+      </div>
+
+      <!-- Libellé en Français -->
+      <div class="form-group mt-3">
+        <label for="libelleFr">Libellé (Français) :</label>
+        <input type="text" id="libelleFr" class="form-control" formControlName="libelleFr">
+        <div *ngIf="typeUserForm.get('libelleFr')?.invalid && typeUserForm.get('libelleFr')?.touched" class="text-danger">
+          <span *ngIf="typeUserForm.get('libelleFr')?.errors?.['required']">Ce champ est obligatoire.</span>
+          <span *ngIf="typeUserForm.get('libelleFr')?.errors?.['minlength']">Minimum : 3 caractères.</span>
+          <span *ngIf="typeUserForm.get('libelleFr')?.errors?.['pattern']">Seules les lettres françaises et les chiffres sont autorisés.</span>
+        </div>
+      </div>
+
+      <!-- Message d'erreur général -->
+      <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+        {{ errorMessage }}
+      </div>
+
+      <!-- Bouton de soumission -->
+      <button type="submit" class="btn btn-primary mt-3">
+        Ajouter
+      </button>
+    </form>
+  </div>

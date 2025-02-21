@@ -5,7 +5,7 @@
   </select>
 
   <div *ngIf="selectedProvider">
-    <h3>Articles for {{ selectedProvider?.name }}</h3>
+    <h3>Articles for {{ selectedProvider.name}}</h3>
     <div *ngIf="articles.length > 0">
       <ul>
         <li *ngFor="let article of articles">
